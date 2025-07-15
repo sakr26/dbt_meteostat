@@ -15,7 +15,7 @@ add_features AS (
 add_more_features AS (
     SELECT *
 		, (CASE 
-			WHEN month_name in ('December', 'January', 'February') THEN 'winter'
+			WHEN month_name in ('December', 'January ', 'February') THEN 'winter'
 			WHEN ('March', 'April', 'May') THEN 'spring'
             WHEN ('June', 'July', 'August') THEN 'summer'
             WHEN ('September', 'October', 'November') THEN 'autumn'
